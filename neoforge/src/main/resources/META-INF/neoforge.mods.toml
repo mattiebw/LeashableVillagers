@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+issueTrackerURL = "https://github.com/mattiebw/LeashableVillagers/issues"
+license = "MIT"
+
+[[mods]]
+modId = "leashablevillagers"
+version = "${version}"
+displayName = "Leashable Villagers"
+authors = "Matt Ware"
+description = '''
+Allows villagers to be leashed. Do not think about the moral implications.
+'''
+logoFile = "assets/leashablevillagers/icon.png"
+
+[[dependencies.leashablevillagers]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.leashablevillagers]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "leashablevillagers.mixins.json"

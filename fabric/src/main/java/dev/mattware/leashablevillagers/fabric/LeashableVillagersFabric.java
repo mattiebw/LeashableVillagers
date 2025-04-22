@@ -3,9 +3,14 @@ package dev.mattware.leashablevillagers.fabric;
 import dev.mattware.leashablevillagers.LeashableVillagers;
 import net.fabricmc.api.ModInitializer;
 
-public class LeashableVillagersFabric implements ModInitializer {
+public final class LeashablevillagersFabric implements ModInitializer {
     @Override
     public void onInitialize() {
+        // This code runs as soon as Minecraft is in a mod-load-ready state.
+        // However, some things (like resources) may still be uninitialized.
+        // Proceed with mild caution.
+
+        // Run our common setup.
         LeashableVillagers.init();
     }
 }

@@ -8,24 +8,29 @@
     "Matt Ware"
   ],
   "contact": {
-    "sources": "https://github.com/mattieof/LeashableVillagers",
+    "sources": "https://github.com/mattiebw/LeashableVillagers",
     "homepage": "https://modrinth.com/mod/leashable-villagers",
-    "repo": "https://github.com/mattieof/LeashableVillagers",
-    "issues": "https://github.com/MattieOF/LeashableVillagers/issues"
+    "repo": "https://github.com/mattiebw/LeashableVillagers",
+    "issues": "https://github.com/mattiebw/LeashableVillagers/issues"
   },
   "license": "MIT",
   "icon": "assets/leashablevillagers/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.mattware.leashablevillagers.fabric.LeashableVillagersFabric"
+      "dev.mattware.leashablevillagers.fabric.LeashablevillagersFabric"
+    ],
+    "client": [
+      "dev.mattware.leashablevillagers.fabric.client.LeashablevillagersFabricClient"
     ]
   },
   "mixins": [
-    "leashablevillagers-common.mixins.json"
+    "leashablevillagers.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.15.9",
-    "minecraft": ">=1.20.6"
+    "fabricloader": ">=0.16",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
   }
 }
